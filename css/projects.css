@@ -66,3 +66,17 @@ html,body { height: 100%; margin: 0; font-family: 'Inter', system-ui, -apple-sys
   .company-logo { width: 70%; }
   .client-logo { height: 36px; }
 }
+.map-container {
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(2,6,23,0.6);
+}
+
+/* glass card for contact */
+.glass-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.04);
+  backdrop-filter: blur(6px);
+}
