@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Himanshu Barik — Agile, Product & Strategy Leader</title>
+  <link rel="preload" as="image" href="images/profile.webp" />
 
   <!-- Inter font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -53,7 +54,7 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <div class="hero-inner px-6 py-28 max-w-6xl">
-        <img src="images/profile.jpg"
+        <img src="images/profile.webp"
 			alt="Himanshu B Barik"
 			class="mx-auto w-52 h-52 rounded-full ring-4 ring-blue-500/30 object-cover shadow-lg mb-6 transform transition duration-500 ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl"
 			data-aos="fade-up">
@@ -146,16 +147,16 @@
       <h2 class="section-title">Certifications</h2>
       <div class="flex flex-wrap justify-center gap-6 mt-6">
         <div class="w-40 h-28 cert-thumb cert-thumb-wrap cursor-pointer" onclick="openModal('pmpModal')" data-aos="fade-up" data-aos-delay="80">
-          <img src="images/pmp-thumb.png" alt="PMP" class="w-full h-full object-cover" />
+          <img src="images/pmp-thumb.png" alt="PMP" loading="lazy" class="w-full h-full object-cover" />
         </div>
         <div class="w-40 h-28 cert-thumb cert-thumb-wrap cursor-pointer" onclick="openModal('pspoModal')" data-aos="fade-up" data-aos-delay="160">
-          <img src="images/pspo-thumb.png" alt="PSPO" class="w-full h-full object-cover" />
+          <img src="images/pspo-thumb.png" alt="PSPO" loading="lazy" class="w-full h-full object-cover" />
         </div>
         <div class="w-40 h-28 cert-thumb cert-thumb-wrap cursor-pointer" onclick="openModal('csmModal')" data-aos="fade-up" data-aos-delay="240">
-          <img src="images/csm-thumb.png" alt="CSM" class="w-full h-full object-cover" />
+          <img src="images/csm-thumb.png" alt="CSM" loading="lazy" class="w-full h-full object-cover" />
         </div>
 		<div class="w-40 h-28 cert-thumb cert-thumb-wrap cursor-pointer" onclick="openModal('itilModal')" data-aos="fade-up" data-aos-delay="240">
-          <img src="images/itil-thumb.png" alt="ITIL" class="w-full h-full object-cover" />
+          <img src="images/itil-thumb.png" alt="ITIL" loading="lazy" class="w-full h-full object-cover" />
         </div>
       </div>
     </section>
@@ -198,20 +199,20 @@
 
   <!-- Modals for certificates -->
   <div id="pmpModal" class="modal" onclick="closeModalOnBg(event,'pmpModal')">
-    <img src="images/PMP_Cert.png" alt="PMP certificate" class="modal-img" />
+    <img src="images/PMP_Cert.webp" alt="PMP certificate" loading="lazy" class="modal-img" />
   </div>
   <div id="pspoModal" class="modal" onclick="closeModalOnBg(event,'pspoModal')">
-    <img src="images/PSPO_Cert.png" alt="PSPO certificate" class="modal-img" />
+    <img src="images/PSPO_Cert.webp" alt="PSPO certificate" loading="lazy" class="modal-img" />
   </div>
   <div id="csmModal" class="modal" onclick="closeModalOnBg(event,'csmModal')">
-    <img src="images/CSM_Cert.png" alt="CSM certificate" class="modal-img" />
+    <img src="images/CSM_Cert.webp" alt="CSM certificate" loading="lazy" class="modal-img" />
   </div>
   <div id="itilModal" class="modal" onclick="closeModalOnBg(event,'itilModal')">
-    <img src="images/ITIL_Cert.png" alt="ITIL certificate" class="modal-img" />
+    <img src="images/ITIL_Cert.webp" alt="ITIL certificate" loading="lazy" class="modal-img" />
   </div>
 
   <!-- AOS + app script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/index.js" defer></script>
 </body>
 </html>

@@ -12,7 +12,7 @@ html,body { height: 100%; margin: 0; font-family: 'Inter', system-ui, -apple-sys
   position: fixed;
   inset: 0;
   z-index: 0;
-  background-image: url('../images/hero-bg.jpg');
+  background-image: url('../images/hero-bg.webp');
   background-size: cover;
   background-position: center top;
   filter: blur(6px) brightness(0.45);
