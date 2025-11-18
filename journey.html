@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Professional product leadership journey of Himanshu Barik — across Citibank, Paymentus, Oracle and more.">
+<meta property="og:image" content="images/hero-bg.webp">
+<meta property="og:title" content="Journey | Himanshu Barik">
+<meta property="og:description" content="Explore my journey - projects and achievements.">
+
+  <title>Journey | Himanshu Barik</title>
+
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind (utilities base) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- page styles -->
+  <link rel="stylesheet" href="css/journey.css">
+</head>
+<body class="antialiased text-slate-100">
+<!-- Navbar Start -->
+<nav class="fixed top-0 left-0 w-full bg-gray-900 bg-opacity-80 backdrop-blur-md z-50 shadow-lg">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+    <!-- Logo / Name -->
+    <a href="index.html" class="text-xl font-semibold text-blue-400 tracking-wide hover:text-blue-300 transition duration-300">
+    </a>
+	<a href="cases.html" class="text-xl font-semibold text-blue-400 tracking-wide hover:text-blue-300 transition duration-300">
+    </a>
+	<a href="journey.html" class="text-xl font-semibold text-blue-400 tracking-wide hover:text-blue-300 transition duration-300">
+    </a>
+	
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex space-x-8 text-gray-300 font-medium">
+      <a href="index.html" class="hover:text-blue-400 transition duration-300">Home</a>
+	  <a href="cases.html" class="hover:text-blue-400 transition duration-300">Cases</a>
+      <a href="journey.html" class="hover:text-blue-400 transition duration-300">Journey</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden text-gray-300 hover:text-blue-400 focus:outline-none transition duration-300">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile Menu Dropdown -->
+  <div id="mobile-menu" class="hidden md:hidden bg-gray-800 bg-opacity-95 px-6 py-3 space-y-3 text-gray-300">
+    <a href="index.html" class="block hover:text-blue-400 transition duration-300">Home</a>
+	<a href="cases.html" class="block hover:text-blue-400 transition duration-300">Cases</a>
+    <a href="journey.html" class="block hover:text-blue-400 transition duration-300">Journey</a>
+  </div>
+</nav>
+<!-- Navbar End -->
+  <!-- Parallax BG - will be slightly moved in JS per segment -->
+  <div id="projectsParallax" class="parallax-bg" aria-hidden="true"></div>
+  <div id="parallaxOverlay" class="parallax-overlay" aria-hidden="true"></div>
+
+  <!-- Compact Hero -->
+  <header class="projects-hero relative z-20">
+    <div class="max-w-6xl mx-auto px-6 py-20 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-3">Projects & Professional Journey</h1>
+      <p class="text-lg text-slate-300 max-w-3xl mx-auto">A curated selection of product, digital transformation and delivery across 7 companies, 14 countries.</p>
+	  <a href="Himanshu_Barik_ProductManager_14years.pdf" class="btn-primary mt-6" download>📄 Download Resume</a>
+
+    </div>
+  </header>
+
+  <main class="relative z-30 max-w-6xl mx-auto px-6">
+	
+    <!-- CITIBANK -->
+    <section id="citi" class="company-block py-12" data-aos="fade-up" data-speed="0.05">
+      <div class="company-logo-wrap mb-6">
+        <img src="images/companies/citibank.png" alt="Citibank" class="company-logo mx-auto" />
+      </div>
+
+      <div class="company-card p-6">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-6">
+          <div class="md:flex-1">
+            <h3 class="text-2xl font-semibold text-white">Citibank</h3>
+            <p class="text-slate-300 mt-1"><em>Product Manager</em> • Feb 2022 – Present</p>
+
+            <p class="mt-4 text-slate-200">Led Generative AI adoption for traders and account managers, delivering personalized insights and automated content. Owned end-to-end overhaul of fixed-income trading platform (TPS) with bulk trades, mortgages, multi-currency support, and real-time compliance.</p>
+          </div>
+
+          <div class="md:w-64 text-slate-200">
+            <h4 class="text-indigo-300 font-semibold mb-2">Key outcomes</h4>
+            <ul class="list-disc ml-4 space-y-2 text-sm">
+			  <li>Boosted client satisfaction <strong>30%</strong> and slashed report creation time <strong>70%</strong>.</li>
+              <li>Reduced support tickets by <strong>35%</strong> through improved onboarding and targeted fixes.</li>
+              <li>Delivered API integrations (BBG, SIMPICITI, MARS, ONEBOOK) cutting processing time by <strong>30%</strong>.</li>
+              <li>Accelerated development velocity <strong>10%</strong> 🚀 with strategic backlog prioritization — grew backlog <strong>20%</strong>.</li>
+              <li>Eliminated manual errors using Agentic AI, improving accuracy 10% org-wide.</li>
+              <li>Delivered 95% on-time, under-budget migration with 10% cost savings 💰 through resource optimization.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-6 clients-row" aria-label="Clients for Citibank">
+          <h5 class="text-sm text-slate-300 mb-2">Regions:</h5>
+          <div class="flex flex-wrap gap-4 items-center">
+            <span class="text-xs text-slate-400 ml-2">London • New York • Singapore • Sydney • Tokyo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAPCO -->
+    <section id="#capco" class="company-block py-12" data-aos="fade-up" data-speed="0.06">
+      <div class="company-logo-wrap mb-6">
+        <img src="images/companies/capco.png" alt="CAPCO" class="company-logo mx-auto" />
+      </div>
+
+      <div class="company-card p-6">
+        <div class="md:flex md:justify-between gap-6">
+          <div class="md:flex-1">
+            <h3 class="text-2xl font-semibold text-white">CAPCO</h3>
+            <p class="text-slate-300 mt-1"><em>Product Owner</em> • Aug 2021 – Feb 2022</p>
+            <p class="mt-4 text-slate-200">Defined and secured executive sign-off on 6-month, 1-year, and 3-year roadmaps for capital markets and insurance clients. Drove Agile transformations and data-informed decisions using conversion, retention, and time-to-value metrics.</p>
+          </div>
+
+          <div class="md:w-64 text-slate-200">
+            <h4 class="text-indigo-300 font-semibold mb-2">Key outcomes</h4>
+            <ul class="list-disc ml-4 space-y-2 text-sm">
+              <li>Aligned cross-functional teams via tailored Agile/Waterfall kickoffs and task matrices.</li>
+              <li>Introduced conversion / retention metrics and tracked time-to-value for pilots.</li>
+              <li>Accelerated delivery with client onboarding frameworks and daily stand-ups.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-6 clients-row">
+          <h5 class="text-sm text-slate-300 mb-2">Clients:</h5>
+          <div class="flex flex-wrap gap-4 items-center">
+            <img src="images/clients/ifg.jpeg" alt="IFG Financial" class="client-logo" />
+            <img src="images/clients/manulife.png" alt="Manulife" class="client-logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAYMENTUS -->
+    <section id="#paymentus" class="company-block py-12" data-aos="fade-up" data-speed="0.07">
+      <div class="company-logo-wrap mb-6">
+        <img src="images/companies/paymentus.png" alt="Paymentus" class="company-logo mx-auto" />
+      </div>
+
+      <div class="company-card p-6">
+        <div class="md:flex md:justify-between gap-6">
+          <div class="md:flex-1">
+            <h3 class="text-2xl font-semibold text-white">Paymentus</h3>
+            <p class="text-slate-300 mt-1"><em>Product Owner & Scrum Master</em> • Jan 2020 – Aug 2021</p>
+            <p class="mt-4 text-slate-200">Launched payment alerts + missing-files monitoring product and led cloud migration to AWS. Managed JPMorgan → Braintree gateway upgrade and embedded AI chatbot for instant support.</p>
+          </div>
+
+          <div class="md:w-64 text-slate-200">
+            <h4 class="text-indigo-300 font-semibold mb-2">Key outcomes</h4>
+            <ul class="list-disc ml-4 space-y-2 text-sm">
+              <li>Saved $1M annually by cutting SLA breaches 95% (100 → 5 per year) within 8 months via alert monitoring.</li>
+              <li>Boosted sprint completion 25% and cross-team collaboration 50% via shared goals.</li>
+              <li>Delivered full migration ahead of schedule with zero downtime — IPO-ready.</li>
+			  <li>Modernized revenue streams with higher transaction volume support.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-6 clients-row">
+          <h5 class="text-sm text-slate-300 mb-2">Clients:</h5>
+          <div class="flex flex-wrap gap-4 items-center">
+            <img src="images/clients/jpmc.jpeg" alt="JPMorgan" class="client-logo" />
+            <img src="images/clients/paypal.png" alt="PayPal" class="client-logo" />
+            <span class="text-xs text-slate-400 ml-2">3500+ utility providers (North & South America)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEALER-FX -->
+    <section id="#dealerfx" class="company-block py-12" data-aos="fade-up" data-speed="0.05">
+      <div class="company-logo-wrap mb-6">
+        <img src="images/companies/dealerfx.png" alt="Dealer-FX" class="company-logo mx-auto" />
+      </div>
+
+      <div class="company-card p-6">
+	  <div class="md:flex md:justify-between gap-6">
+        <div class="md:flex-1">
+          <h3 class="text-2xl font-semibold text-white">Dealer-FX Group</h3>
+          <p class="text-slate-300 mt-1"><em>Scrum Master</em>• Apr 2018 - Jan 2020</p>
+          <p class="mt-4 text-slate-200">Facilitated high-velocity Agile ceremonies across product, portfolio, and delivery teams. Optimized stand-ups, retros, and backlog grooming for consistent sprint success.</p>
+		</div>
+		<div class="md:w-64 text-slate-200">
+            <h4 class="text-indigo-300 font-semibold mb-2">Key outcomes</h4>
+            <ul class="list-disc ml-4 space-y-2 text-sm">
+              <li>Cut daily stand-up time 40% with laser-focused facilitation.</li>
+              <li>Achieved 90% sprint-goal accomplishment rate through iterative improvements.</li>
+              <li>Increased sprint review attendance 25% by linking dev progress to stakeholder expectations.</li>
+			  <li>Reduced delivery friction via joint problem-solving forums.</li>
+            </ul>
+        </div>
+		</div>
+        <div class="mt-6 clients-row">
+          <h5 class="text-sm text-slate-300 mb-2">Clients:</h5>
+          <div class="flex flex-wrap gap-4 items-center">
+            <img src="images/clients/fca.png" alt="FCA Automobiles" class="client-logo" />
+			<img src="images/clients/honda.png" alt="Honda Motors" class="client-logo" />
+			<img src="images/clients/mitsubishi.png" alt="Mitsubishi Motors" class="client-logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IN2IT -->
+    <section id="#in2it" class="company-block py-12" data-aos="fade-up" data-speed="0.06">
+      <div class="company-logo-wrap mb-6">
+        <img src="images/companies/in2it.png" alt="In2IT Technologies" class="company-logo mx-auto" />
+      </div>
+
+      <div class="company-card p-6">
+	    <div class="md:flex md:justify-between gap-6">
+          <div class="md:flex-1">
+            <h3 class="text-2xl font-semibold text-white">In2IT Technologies, South Africa</h3>
+            <p class="text-slate-300 mt-1"><em>Project Manager</em>• Jul 2016 - Nov 2017</p>
+			<p class="mt-4 text-slate-200">Transformed SA Post Office compliance posture and deployed enterprise risk framework for SA Reserve Bank. Led zero-downtime digital migration and omnichannel integration (online, mobile, ATM).</p>
+		  </div>
+		  <div class="md:w-64 text-slate-200">
+            <h4 class="text-indigo-300 font-semibold mb-2">Key outcomes</h4>
+            <ul class="list-disc ml-4 space-y-2 text-sm">
+              <li>Resolved 85% audit violations in 3 months for SA Post — secured full banking license in 6 months.</li>
+              <li>Reduced operational risk 15% with real-time visibility dashboards.</li>
+              <li>Boosted digital engagement 20% and satisfaction 15% via seamless UX.</li>
+			  <li>Ensured uninterrupted service during retail banking system migration.</li>
+            </ul>
+          </div>
+		  </div>
+          <div class="mt-6 clients-row">
+            <h5 class="text-sm text-slate-300 mb-2">Clients:</h5>
+            <div class="flex flex-wrap gap-4 items-center">
+              <img src="images/clients/sarb.png" alt="Reserve Bank of South Africa" class="client-logo" />
+			  <img src="images/clients/sapo.jpeg" alt="SA Post" class="client-logo" />
+            </div>
+          </div>
+        </div>
+	  </div>
+    </section>
+
+    <!-- WIPRO -->
+    <section id="#wipro" class="company-block py-12" data-aos="fade-up" data-speed="0.07">
+      <div class="company-logo-wrap mb-6">
+        <img src="images/companies/wipro.png" alt="Wipro" class="company-logo mx-auto" />
+      </div>
+
+      <div class="company-card p-6">
+	    <div class="md:flex md:justify-between gap-6">
+          <div class="md:flex-1">
+            <h3 class="text-2xl font-semibold text-white">Wipro Technologies (Contract through Nichepro Tech.)</h3>
+            <p class="text-slate-300 mt-1"><em>Senior Software Engineer</em>• Jul 2015 - May 2016</p>
+		    <p class="mt-4 text-slate-200">Delivered 95% first-call resolution for AMLAK (UAE) retail/corporate banking clients. Built automation scripts and internal knowledge base while leading remote support team.</p>
+		  </div>
+		  <div class="md:w-64 text-slate-200">
+            <h4 class="text-indigo-300 font-semibold mb-2">Key outcomes</h4>
+            <ul class="list-disc ml-4 space-y-2 text-sm">
+              <li>Achieved 80% remote issue resolution — minimized on-site visits globally.</li>
+              <li>Cut manual workload 15% via scripting, freeing capacity for strategic work.</li>
+              <li>Rapid root-cause diagnosis reduced downtime and ensured continuity.</li>
+			  <li>Scaled support processes for multi-region operations.</li>
+            </ul>
+          </div>
+		  </div>
+          <div class="mt-6 clients-row">
+            <h5 class="text-sm text-slate-300 mb-2">Clients:</h5>
+            <div class="flex flex-wrap gap-4 items-center">
+              <img src="images/clients/amlak.png" alt="Amlak Holding" class="client-logo" />
+            </div>
+          </div>
+        </div>
+	  </div>
+    </section>
+
+    <!-- ORACLE -->
+    <section id="#oracle" class="company-block py-12" data-aos="fade-up" data-speed="0.08">
+      <div class="company-logo-wrap mb-6">
+        <img src="images/companies/oracle.png" alt="Oracle" class="company-logo mx-auto" />
+      </div>
+
+      <div class="company-card p-6">
+	    <div class="md:flex md:justify-between gap-6">
+          <div class="md:flex-1">
+            <h3 class="text-2xl font-semibold text-white">Oracle</h3>
+            <p class="text-slate-300 mt-1"><em>Staff Consultant</em>• Sep 2011 - May 2015</p>
+		    <p class="mt-4 text-slate-200">Designed digital banking roadmaps and customer-journey mapping for 21 banks across 13 countries. Advised on branch optimization and digital channel shifts while rolling out Oracle Retail & Corporate Banking suite.</p>
+		  </div>
+		  <div class="md:w-64 text-slate-200">
+            <h4 class="text-indigo-300 font-semibold mb-2">Key outcomes</h4>
+            <ul class="list-disc ml-4 space-y-2 text-sm">
+              <li>Drove 40% surge in mobile usage and 25% rise in online account openings.</li>
+              <li>Reduced complaints 20% and lifted NPS 25% via process redesign.</li>
+              <li>Achieved 15% operational cost savings 💰 through branch-network optimization.</li>
+			  <li>Scaled suite to 21 banks with consistent high satisfaction.</li>
+            </ul>
+          </div>
+		  </div>
+          <div class="mt-6 clients-row">
+            <h5 class="text-sm text-slate-300 mb-2">Clients:</h5>
+            <div class="flex flex-wrap gap-4 items-center">
+              <img src="images/clients/alpha.png" alt="Alpha Bank" class="client-logo" />
+			  <img src="images/clients/euro.png" alt="Euro Bank" class="client-logo" />
+			  <img src="images/clients/hdfc.png" alt="HDFC Bank" class="client-logo" />
+			  <img src="images/clients/mkb.png" alt="MKB Bank" class="client-logo" />
+			  <img src="images/clients/pbp.jpeg" alt="PBP Bank" class="client-logo" />
+			  <img src="images/clients/yes.jpeg" alt="YES Bank" class="client-logo" />
+            </div>
+          </div>
+        </div>
+	  </div>
+    </section>
+	
+	<!-- CERTIFICATES -->
+      <section id="certs" class="py-20">
+        <h2 class="section-title text-center mb-12" data-aos="fade-up">Certifications</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 justify-center">
+          <div class="cert-thumb" data-aos="zoom-in"><img src="images/PMP_Cert.webp" alt="PMP" class="zoomable"></div>
+          <div class="cert-thumb" data-aos="zoom-in"><img src="images/PSPO_Cert.webp" alt="PSPO" class="zoomable"></div>
+          <div class="cert-thumb" data-aos="zoom-in"><img src="images/CSM_Cert.webp" alt="CSM" class="zoomable"></div>
+          <div class="cert-thumb" data-aos="zoom-in"><img src="images/ITIL_Cert.webp" alt="ITIL" class="zoomable"></div>
+        </div>
+      </section>
+	  
+    <!-- RESUME + CONTACT (Dual Glass Cards) -->
+    <section id="resume-contact" class="py-16 px-6 mb-12" data-aos="fade-up">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+    
+        <!-- Glass Card 1: Resume -->
+        <div class="glass-card p-8 text-center rounded-xl">
+          <h2 class="text-2xl font-bold text-indigo-300 mb-2">Download My Resume</h2>
+          <p class="text-slate-200 mb-6">
+            Get a detailed view of my work experience, skills, and achievements.
+          </p>
+          <a href="Himanshu_Barik_ProductManager_14years.pdf" class="btn-primary" download>📄 Download Resume</a>
+        </div>
+    
+        <!-- Glass Card 2: Let's Connect -->
+        <div class="glass-card p-8 text-center rounded-xl">
+          <h2 class="text-2xl font-bold text-indigo-300 mb-2">Let’s Connect</h2>
+          <p>
+			<a class="btn-primary my-4" href="https://calendly.com/himanshubarik-work/30min" target="_blank">📅 Book a Meeting</a>
+		  <p>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <a class="btn-primary" href="mailto:himanshu@himanshubarik.com">📧 Email</a>
+            <a class="btn-primary" href="https://www.linkedin.com/in/himanshubarik" target="_blank">💼 LinkedIn</a>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="py-6 text-center text-sm text-slate-400">
+    Built with ❤️, hustle, Agentic AI, and too much coffee ☕ © 2025 Himanshu Barik
+  </footer>
+  <!-- AOS + projects script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/journey.js"></script>
+  
+  <!-- Default Statcounter code for Portfolio https://www.himanshubarik.com/ -->
+	<script type="text/javascript">
+	  var sc_project=13181801; 
+	  var sc_invisible=1; 
+	  var sc_security="25a6f985"; 
+	</script>
+	<script type="text/javascript"
+	  src="https://www.statcounter.com/counter/counter.js" async>
+	</script>
+	<noscript>
+	  <div class="statcounter"><a title="Web Analytics"
+	  href="https://statcounter.com/" target="_blank"><img class="statcounter"
+	  src="https://c.statcounter.com/13181801/0/25a6f985/1/" alt="Web Analytics"
+	  referrerPolicy="no-referrer-when-downgrade"></a></div>
+	</noscript>
+  <!-- End of Statcounter Code -->
+  
+</body>
+</html>

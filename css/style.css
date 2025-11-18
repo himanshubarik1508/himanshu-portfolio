@@ -1,0 +1,63 @@
+:root {
+  --accent: #2563EB;
+  --bg-dark: #0b1220;
+  --bg-mid: #0f172a;
+  --glass: rgba(255,255,255,0.03);
+}
+* { box-sizing: border-box; }
+html,body { height: 100%; margin: 0; font-family: 'Inter', system-ui; background: linear-gradient(180deg,var(--bg-dark),var(--bg-mid)); color: #e6eef8; -webkit-font-smoothing: antialiased; }
+
+/* HERO */
+#hero { position: relative; height: 100vh; overflow: hidden; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; }
+#hero::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.55); z-index: 0; }
+#hero .hero-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('../images/product.webp'); background-size: cover; background-position: center; filter: blur(3px); z-index: 0; }
+#hero .hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.55); z-index: 1; }
+#hero .hero-content { position: relative; z-index: 2; padding: 0 1rem; opacity: 0; transform: translateY(30px); animation: heroFadeIn 1.5s ease-out forwards 0.3s; }
+#hero h1, #hero p { animation: fadeUp 1.5s ease-out forwards; }
+@keyframes heroFadeIn { to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeUp { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
+
+.scroll-indicator { width: 36px; height: 36px; border-radius: 999px; display: flex; align-items: center; justify-content: center; border: 1.5px solid rgba(255,255,255,0.12); margin: 18px auto 0; animation: bounce 2s infinite; }
+@keyframes bounce { 0%,20%,50%,80%,100% { transform: translateY(0); } 40% { transform: translateY(8px); } 60% { transform: translateY(4px); } }
+
+.btn-primary { display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;background:linear-gradient(90deg,#1e40af,var(--accent));color:white;font-weight:600;text-decoration:none;box-shadow:0 10px 30px rgba(37,99,235,0.12); }
+.btn-primary:hover { filter:brightness(1.02); transform:translateY(-2px); transition:all .22s ease; }
+.btn-ghost { display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;border:1px solid rgba(255,255,255,0.06);color:rgba(255,255,255,0.95);text-decoration:none;font-weight:600;background:transparent; }
+.btn-ghost:hover { background:rgba(255,255,255,0.03); color:#dbeafe; transform:translateY(-2px); transition:all .22s ease; }
+
+.section-title { color:#93c5fd; font-size:1.6rem; margin-bottom:1rem; font-weight:700; }
+.section { position:relative; z-index:3; }
+
+.achievement-card, .glass-card, .company-card {
+  background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));
+  border-radius:14px; border:1px solid rgba(255,255,255,0.03); padding:18px;
+  transition:transform .35s ease,box-shadow .35s ease; backdrop-filter:blur(6px);
+}
+.achievement-card:hover, .company-card:hover { transform:translateY(-10px); box-shadow:0 20px 60px rgba(2,6,23,0.7); }
+
+.parallax-bg { position:fixed; inset:0; z-index:0; background-image:url('../images/hero-bg.webp'); background-size:cover; background-position:center top; filter:blur(6px) brightness(0.45); transform:translateY(0); will-change:transform; background-attachment:fixed; }
+.parallax-overlay { position:fixed; inset:0; z-index:1; background:linear-gradient(90deg,rgba(2,6,23,0.6) 0%,rgba(6,19,45,0.38) 50%,rgba(2,6,23,0.6) 100%); opacity:0; transition:opacity .6s ease; }
+.parallax-bg.active, .parallax-overlay.active { opacity:1; }
+
+.animate-marquee { animation:marquee 20s linear infinite; }
+@keyframes marquee { 0%{transform:translateX(0%)} 100%{transform:translateX(-100%)} }
+
+.product-placeholder { width:420px; max-width:100%; border-radius:12px; box-shadow:0 24px 70px rgba(2,6,23,0.6); border:1px solid rgba(255,255,255,0.04); opacity:0.95; }
+@media (max-width:768px) { .product-placeholder { display:none; } }
+
+.company-logo { max-width:320px; width:60%; height:auto; display:block; filter:drop-shadow(0 10px 30px rgba(0,0,0,0.6)); transition:transform .28s ease,box-shadow .28s ease; margin:0 auto; }
+.company-logo:hover { transform:translateY(-6px) scale(1.02); box-shadow:0 24px 60px rgba(37,99,235,0.12); }
+.client-logo { height:44px; object-fit:contain; display:inline-block; filter:saturate(1); transition:transform .22s ease,box-shadow .22s ease; }
+.client-logo:hover { transform:translateY(-6px); box-shadow:0 18px 40px rgba(37,99,235,0.12); }
+
+.cert-thumb { border-radius:10px; overflow:hidden; border:1px solid rgba(255,255,255,0.04); background:rgba(255,255,255,0.02); width:160px; height:112px; cursor:zoom-in; transition:all .32s ease; }
+.cert-thumb:hover { transform:translateY(-6px) scale(1.03); box-shadow:0 20px 60px rgba(37,99,235,0.12); }
+.zoomable { width:100%; height:100%; object-fit:cover; transition:transform .4s ease; }
+.zoomable.zoomed { transform:scale(2.5); position:fixed; top:50%; left:50%; transform:translate(-50%,-50%) scale(2.5); z-index:100; border-radius:12px; box-shadow:0 30px 100px rgba(0,0,0,0.8); }
+
+/* FOOTER GLOW - matches your glassmorphism */
+.footer-glow {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(59, 130, 246, 0.2);
+}
